@@ -1,0 +1,22 @@
+:root{
+    --green: green;
+    --twenty_px : 20px;
+    --red_background: red;
+}
+
+.normal {
+  text-shadow: 2px 2px 3px gold;
+}
+
+
+/* <p> elements that are not in the class `.normal` */
+p:not(.normal) {
+    color: var(--green);
+  }
+  
+  /* Elements that are not <p> elements */
+  body :not(p) {
+    text-decoration: underline;
+    font-size: var(--twenty_px);
+    background-color: var(--red_background);
+  }
